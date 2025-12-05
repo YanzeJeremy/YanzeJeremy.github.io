@@ -1,13 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CS 698 Teaching Materials</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #222;
+    }
+    .page {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 32px 24px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+      text-align: center;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.4rem;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .video-wrapper {
+      margin-top: 1rem;
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #000;
+    }
+    .video-wrapper video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .resources {
+      margin-top: 1rem;
+    }
+    .resources a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid #ccc;
+      font-size: 0.95rem;
+    }
+    .resources a:hover {
+      background: #f0f0f0;
+    }
+    iframe {
+      margin-top: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<h1>CS 698 Teaching Video</h1>
+  <div class="page">
+    <h1>CS 698 Teaching Materials</h1>
+    <p>
+      This page hosts the teaching video and slides for CS 698.
+    </p>
 
-<video controls width="800">
-  <source src="video2675454801.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+    <!-- Video section -->
+    <h2>Teaching Video</h2>
+    <p>
+      You can watch the teaching demonstration directly below.
+    </p>
+    <div class="video-wrapper">
+      <video controls>
+        <!-- If the video file is in the same folder as this HTML, this path is correct. -->
+        <source src="video2675454801.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- PDF section -->
+    <h2>Slides / PDF</h2>
+    <p>
+      Download or view the PDF with the steering vectors materials:
+    </p>
+    <div class="resources">
+      <!-- If you renamed the file to something cleaner, update the href accordingly -->
+      <a href="Steering%20vectors.pdf" target="_blank">
+        📄 Open “Steering vectors” (PDF)
+      </a>
+    </div>
+
+    <!-- Optional inline viewer for the PDF (works in most modern browsers) -->
+    <iframe
+      src="Steering%20vectors.pdf"
+      title="Steering vectors PDF"
+      width="100%"
+      height="500"
+    ></iframe>
+
+    <footer>
+      Hosted with GitHub Pages –
+      <a href="https://yanzejeremy.github.io" target="_blank">yanzejeremy.github.io</a>
+    </footer>
+  </div>
 </body>
 </html>
